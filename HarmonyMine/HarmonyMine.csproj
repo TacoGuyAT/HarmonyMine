@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HarmonyX" Version="2.10.2" />
+    <PackageReference Include="IKVM" Version="8.6.4" />
+    <IkvmReference Include="JarLibraries\1.16.5-server-named.jar">
+      <AssemblyName>net.minecraft.server</AssemblyName>
+      <AssemblyVersion>1.0</AssemblyVersion>
+      <Compile>JarLibraries\commons-codec-1.10.jar;JarLibraries\commons-compress-1.8.1.jar;JarLibraries\commons-io-2.5.jar;JarLibraries\commons-lang3-3.5.jar;JarLibraries\httpclient-4.3.3.jar;JarLibraries\httpcore-4.3.2.jar;JarLibraries\jansi-1.18.jar;JarLibraries\log4j-slf4j-impl-2.8.1.jar;JarLibraries\log4j-iostreams-2.8.1.jar;JarLibraries\log4j-core-2.8.1.jar;JarLibraries\log4j-over-slf4j-1.7.9.jar;JarLibraries\slf4j-api-1.7.9.jar;JarLibraries\netty-all-4.1.25.Final.jar</Compile>
+    </IkvmReference>
+    
+    <!--
+      <IkvmReference Include="JarLibraries\1.16.5-server-named.jar">
+        <AssemblyName>net.minecraft.server</AssemblyName>
+        <AssemblyVersion>1.0</AssemblyVersion>
+        <Compile>JarLibraries\commons-codec-1.10.jar;JarLibraries\commons-compress-1.8.1.jar;JarLibraries\commons-io-2.5.jar;JarLibraries\commons-lang3-3.5.jar;JarLibraries\httpclient-4.3.3.jar;JarLibraries\httpcore-4.3.2.jar;JarLibraries\jansi-1.18.jar;JarLibraries\log4j-slf4j-impl-2.8.1.jar;JarLibraries\log4j-iostreams-2.8.1.jar;JarLibraries\log4j-core-2.8.1.jar;JarLibraries\log4j-over-slf4j-1.7.9.jar;JarLibraries\slf4j-api-1.7.9.jar;JarLibraries\netty-all-4.1.25.Final.jar</Compile>
+      </IkvmReference>
+    -->
+    
+    <IkvmReference Include="JarLibraries\ikvmtest-1.0-SNAPSHOT.jar">
+      <AssemblyName>org.example.ikvmtest</AssemblyName>
+      <AssemblyVersion>1.0</AssemblyVersion>
+    </IkvmReference>
+    
+    <IkvmReference Include="JarLibraries\commons-codec-1.10.jar" />
+    <IkvmReference Include="JarLibraries\commons-compress-1.8.1.jar" />
+    <IkvmReference Include="JarLibraries\commons-io-2.5.jar" />
+    <IkvmReference Include="JarLibraries\commons-lang3-3.5.jar" />
+    <IkvmReference Include="JarLibraries\httpclient-4.3.3.jar" />
+    <IkvmReference Include="JarLibraries\httpcore-4.3.2.jar" />
+    <IkvmReference Include="JarLibraries\jansi-1.18.jar" />
+    <IkvmReference Include="JarLibraries\log4j-slf4j-impl-2.8.1.jar" />
+    <IkvmReference Include="JarLibraries\log4j-iostreams-2.8.1.jar" />
+    <IkvmReference Include="JarLibraries\log4j-core-2.8.1.jar" />
+    <IkvmReference Include="JarLibraries\log4j-over-slf4j-1.7.9.jar" />
+    <IkvmReference Include="JarLibraries\slf4j-api-1.7.9.jar" />
+    <IkvmReference Include="JarLibraries\netty-all-4.1.25.Final.jar" />
+  </ItemGroup>
+
+</Project>
