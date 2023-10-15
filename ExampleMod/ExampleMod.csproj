@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -8,6 +8,16 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HarmonyMine\HarmonyMine.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="IKVM" Version="8.6.4" />
+    
+    <IkvmReference Include="..\JarLibraries\1.16.5-server-named.jar">
+      <AssemblyName>net.minecraft.server</AssemblyName>
+      <AssemblyVersion>1.16.5</AssemblyVersion>
+    </IkvmReference>
   </ItemGroup>
 
 </Project>
